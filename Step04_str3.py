@@ -19,3 +19,8 @@ body:
 import yaml
 yaml_data = yaml.safe_load(info)
 print(yaml_data)
+print(type(yaml_data))
+
+trans_yaml = yaml.dump(yaml_data, allow_unicode=True) # allow_unicode=True를 추가하며 인코딩 깨짐 문제를 해결
+print(trans_yaml)
+print(type(trans_yaml))
