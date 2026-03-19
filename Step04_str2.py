@@ -11,6 +11,7 @@ json 문서 형식
 import json
 
 # info는 str type이긴 하나 문자열이 특별한 방식(json)을 띄고 있다.
+# json type은 application이 활용하기 최적화된 문자열 타입
 info = '''{
     "name":"양재혁",
     "addr":"순천",
