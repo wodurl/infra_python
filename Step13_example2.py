@@ -16,7 +16,7 @@ file_loader = FileSystemLoader("html")
 env = Environment(loader=file_loader)
 
 # 템플릿 파일 읽어오기
-temp:str = env.get_template("index_html")
+temp:str = env.get_template("index.html")
 
 # 템플릿에 렌더링할 데이터 (실제로는 DB에서 읽어오게 된다)
 notice_data = {
