@@ -41,3 +41,8 @@ if __name__ == "__main__" :
     p2.call()
     p2.mobile_call()
     p2.take_picture()
+
+    p3:SmartPhone = SmartPhone()
+    p3.call()
+    p3.mobile_call()
+    p3.take_picture()
