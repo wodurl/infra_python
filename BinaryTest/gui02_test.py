@@ -1,4 +1,4 @@
-# gui01_test.py
+# gui02_test.py
 
 # ui Toolkit을 사용할 수 있는 interface 객체 import 하기
 import tkinter as tk
