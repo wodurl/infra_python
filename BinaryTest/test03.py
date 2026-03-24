@@ -21,5 +21,6 @@ print(bin(a^b))
 print(bin(~a))  # 1010 -> 0101
 # 1100은 12, not 연산 ~12는 -(12+1)
 print(bin(~b))  # 1100 -> 0011
-
-print(bin(~a & 0xf))
+print(bin(~a & 0xf)) # 0b101(0101)
+# python에서 int는 비트 길이가 무한대, not 연산하게 되면 무수히 많은 1이 생성됨.
+# 그러므로 ~a = -(a + 1) 공식을 활용함

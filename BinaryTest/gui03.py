@@ -12,16 +12,16 @@ def clicked():
         return  # 함수를 호출한 곳으로 실행의 흐름을 돌려준다(함수 종료)
     
     try:
-        # 입력한 문자열을 정수로 변환
-        num = int(input_value, 2)
-        
+ 
         if not set(input_value).issubset({'0','1'}): 
             result_label.config(text="0과 1만 입력하세요.", fg="red")
             return 
         if len(input_value) > 8: 
             result_label.config(text="2진수 8자리의 값을 입력하세요.", fg="red")
-            return  
+            return 
         
+        # 입력한 문자열을 정수로 변환
+        num = int(input_value, 2)
         # 2진수 형태의 문자열로 변경해서
         binary_result = f"{num}"
         # 출력하기

@@ -2,7 +2,7 @@
 
 # Python에서 2진수 다루기
 
-# 2진수를 숫자를 만들 때 prefix 로 0b
+# 2진수를 10진수로 만들 때 prefix 로 0b
 num1 = 0b1010
 
 result = num1 + 5

@@ -30,7 +30,8 @@ if __name__=="__main__" :
     name_entry.pack(pady=5)
     name_entry.focus() # 포커스 주기
 
-    btn = tk.Button(root, text="전송", command=clicked, width=10, bg='lightgray') # 함수를 만들어 Command의 인자를 준다면, 버튼이 눌릴 때마다 함수가 호출
+    btn = tk.Button(root, text="전송", command=clicked, width=10, bg='lightgray') 
+    # 함수를 만들어 Command의 인자를 준다면, 버튼이 눌릴 때마다 함수가 호출
     btn.pack(pady=15)
 
     label2 = tk.Label(root,text="결과...")
