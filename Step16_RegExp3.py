@@ -13,9 +13,9 @@ import re
 
 for log in logs:
     if re.match(r'\[ERROR\]', log) is not None:
-        logs_error = i
+        logs_error = log
     if re.match(r'\[WARN\]', log) is not None:
-        logs_warn = i
+        logs_warn = log
 
 print(logs_error)
 print(logs_warn)
