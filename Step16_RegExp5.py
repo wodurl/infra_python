@@ -1,4 +1,4 @@
-# Step16_RegExp5.py\\
+# Step16_RegExp5.py
 
 import re
 

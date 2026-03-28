@@ -7,14 +7,16 @@ if __name__=="__main__" :
 
     letter_path=os.path.join(os.getcwd(), "my_letter.txt")
 
+    # 기존의 내용을 제거하고 덮어쓰기
     with open(letter_path, "w", encoding='utf=8') as f:
         f.write("To my Freind")
         f.write("\nHello")
-        f.write("\nI love you")
+        f.write("\nI love you\n")
 
+    # 파일을 열어서 문자열 추가하기 append mode
     with open(letter_path, "a", encoding='utf-8') as f:
-        for i in range(14):
+        for i in range(5):
             f.write("북치기")
-            f.write("박치기")
+            f.write("박치기\n")
         
     print("my_letter.txt 파일 생성 및 쓰기 완료")
